@@ -1,4 +1,4 @@
-Title: Best Movie Quotes
+Title: FavoriteCards
 
 Penny - Leader
 Franck - Member
