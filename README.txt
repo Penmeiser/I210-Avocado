@@ -8,7 +8,7 @@ Description: A site dedicated to cards
 
 Site Structure:
 1. Index
-2. Content
-3. About
-4. Facts
-5. Your fav card
+2. About
+3. Facts
+4. Your Fav Card
+5. contact
