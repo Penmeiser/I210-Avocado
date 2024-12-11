@@ -1,20 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <title>DeckOfCards</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Deck of Cards - Home</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
     <header>
-        <nav id="top">
-            <a href="index.html">Home</a>
-            <a href="about.html">About</a>
-            <a href="facts.html">Facts</a>
-            <a href="favCard.html">FavCard</a>
-            <a href="contact.html">Contact</a>
-        </nav>
+      <h1>Deck of Cards</h1>
+      <nav>
+        <ul>
+          <li><a class="active" href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="facts.html">Facts</a></li>
+          <li><a href="favorite.html">Favorite Card</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
     </header>
-</body>
+
+    <main>
+      <section class="hero-section">
+        <img
+          src="hero.jpg"
+          alt="A deck of cards spread out"
+          class="hero-image"
+        />
+        <div class="hero-text">
+          <h2>Welcome to Deck of Cards</h2>
+          <p>Explore card data from a real card deck API!</p>
+        </div>
+      </section>
+
+      <section>
+        <p>
+          This website interacts with a deck of cards API to show card data and
+          let you choose a favorite card. Explore the pages for more info!
+        </p>
+        <button id="drawCardBtn">Draw a Random Card</button>
+        <div id="randomCardContainer"></div>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2024 Deck of Cards</p>
+    </footer>
+  </body>
 </html>

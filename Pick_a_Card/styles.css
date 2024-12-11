@@ -1,0 +1,151 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f0f8ff;
+  color: #333;
+}
+
+header {
+  background: #a0c4ff;
+  padding: 10px;
+  text-align: center;
+}
+
+.hero-section {
+  position: relative;
+  text-align: center;
+  color: white;
+  margin-bottom: 20px;
+}
+
+.hero-image {
+  width: 100%;
+  max-height: 300px;
+  object-fit: cover;
+}
+
+.hero-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(0, 0, 0, 0.4);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+header h1 {
+  margin: 0;
+  color: #fff;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0 0 0;
+}
+
+nav ul li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  padding: 5px 10px;
+  background: #cfe1ff;
+  border-radius: 5px;
+}
+
+nav ul li a.active,
+nav ul li a:hover {
+  background: #90b4ed;
+  color: #fff;
+}
+
+main {
+  padding: 20px;
+}
+
+main h2 {
+  margin-top: 0;
+}
+
+footer {
+  text-align: center;
+  padding: 10px;
+  background: #a0c4ff;
+  color: #fff;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+form {
+  max-width: 400px;
+  margin-bottom: 20px;
+}
+
+form label {
+  display: block;
+  margin: 10px 0 5px;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+}
+
+form button {
+  margin-top: 10px;
+  padding: 10px 15px;
+  background: #90b4ed;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+form button:hover {
+  background: #6895d9;
+}
+
+.crud-buttons button {
+  margin-right: 10px;
+  padding: 8px 15px;
+  background: #90b4ed;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.crud-buttons button:hover {
+  background: #6895d9;
+}
+
+#randomCardContainer,
+#cardsContainer,
+#favoriteDisplay {
+  margin-top: 20px;
+}
+
+#cardsContainer img,
+#randomCardContainer img {
+  width: 100px;
+}
+
+@media (max-width: 600px) {
+  nav ul li {
+    display: block;
+    margin: 5px 0;
+  }
+
+  footer {
+    position: static;
+  }
+}
