@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Deck of Cards - Favorite Card</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <h1>Deck of Cards</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="facts.html">Facts</a></li>
+          <li><a class="active" href="favorite.html">Favorite Card</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section>
+        <h2>Manage Your Favorite Card</h2>
+        <form id="favoriteForm">
+          <label for="cardCode">Card Code (e.g. AS, KD, 2C):</label>
+          <input type="text" id="cardCode" name="cardCode" required />
+
+          <label for="cardNote">Your Note:</label>
+          <input type="text" id="cardNote" name="cardNote" required />
+
+          <button type="submit">Save Favorite</button>
+        </form>
+
+        <div class="crud-buttons">
+          <button id="retrieveBtn">Retrieve Favorite</button>
+          <button id="updateBtn">Update Favorite</button>
+          <button id="deleteBtn">Delete Favorite</button>
+        </div>
+
+        <div id="favoriteDisplay"></div>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2024 Deck of Cards</p>
+    </footer>
+  </body>
+</html>

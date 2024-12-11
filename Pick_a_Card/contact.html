@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Deck of Cards - Contact</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <h1>Deck of Cards</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="facts.html">Facts</a></li>
+          <li><a href="favorite.html">Favorite Card</a></li>
+          <li><a class="active" href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section>
+        <h2>Contact Us</h2>
+        <form action="simpleForm.html" method="get">
+          <label for="fullname">Full Name:</label>
+          <input type="text" name="fullname" id="fullname" required />
+
+          <label for="email">Email:</label>
+          <input type="email" name="email" id="email" required />
+
+          <label for="phone">Phone Number:</label>
+          <input type="text" name="phone" id="phone" required />
+
+          <label for="comment">Comments:</label>
+          <textarea name="comment" id="comment" required></textarea>
+
+          <button type="submit">Submit</button>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2024 Deck of Cards</p>
+    </footer>
+  </body>
+</html>

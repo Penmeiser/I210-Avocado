@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>contact</title>
+  </head>
+  <body>
+    <script>
+      const $_GET = location.search
+        .replace("?", "")
+        .split("&")
+        .map((keyValuePair) =>
+          keyValuePair.split("=").reduce((key, value) => ({ [key]: value }))
+        )
+        .reduce((acc, prop) => ({ ...acc, ...prop }));
+
+      $fullName = $_GET["fullname"];
+      $email = $_GET["email"];
+      $phone = $_GET["phone"];
+      $comment = $_GET["comment"];
+      $subject = "I210 Contact Form";
+
+      //Enter your email address
+      $to = "jeucafro@gmail.com";
+
+      //Prepare Email Body Text
+      $Body = "";
+      $Body += "Name: " + $fullName + "\n";
+      $Body += "Phone Number: " + $phone + "\n";
+      $Body += "Email: " + $email + "\n";
+      $Body += "Comments: " + $comment + "\n";
+
+      //Send Email
+      if ($fullName && $email) {
+        window.open(
+          `mailto:${$to}?subject=${$subject}&body=${encodeURIComponent($Body)}`,
+          "_blank"
+        );
+        location.href = "success.html";
+      } else {
+        location.href = "contact.html";
+      }
+    </script>
+  </body>
+</html>
